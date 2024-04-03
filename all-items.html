@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllItems</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="body-shop-all-items">
+    <div class="backdrop"></div>
+    <nav class="topnav-main">
+        <div class="screen-wrap">
+            <img class="logo" src="img/Youniverse-logo.png" alt="logo" srcset="">
+            <a class="nav-icon" href=""><img id="cart" src="img/shopping-cart.png" alt="cart" srcset=""></a>
+            <a id="icon">
+                <i class="fa fa-bars"></i>
+            </a>    
+        </div>
+        <div id="nav" class="nav-links">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="all-items.html">AllItems</a>
+        </div>
+    </nav>
+    <div id="all-info" class="all-info">
+        <header class="title-header">
+            <h1 id="aboutTitle" class="title">All Items</h1>
+        </header>
+        <section class="all-items-shop">
+            <div class="side-menu">
+                <input type="search" name="search" id="searchItem" placeholder="Search..">
+                <label for="categoryList">Category</label>
+                <ul name="categoryList" id="categoryList">
+                    <li class="category-item">Galaxies</li>
+                    <li class="category-item">Stars</li>
+                    <li class="category-item">Planets</li>
+                    <li class="category-item">Accessories</li>
+                </ul>
+                <label for="priceRange"></label>
+                <input type="range" value="10" min="10" max="130" step="10" name="priceRange" id="priceRange">
+                <p><span id="priceValue"></span></p>
+            </div>
+            <div class="all-items-cards">
+            </div>
+        </section>
+        <div id="sidecart" class="sidecart">
+            <div class="card-content">
+                <div class="cart-header">
+                    <img class="cart-icon" src="img/shopping-cart.png" alt="" srcset="">
+                    <div class="header-title">
+                        <h2>Your Cart</h2>
+                        <span id="items-num">0</span>
+                    </div>
+                    <span id="close-btn" class="close-btn">&times;</span>
+                </div>
+                <div class="cart-items">
+                </div>
+                <div class="cart-actions">
+                    <div class="subtotal">
+                        <p>SUBTOTAL:</p>
+                        <p>$<span id="subtotal-price">0</span></p>
+                    </div>
+                    <button>View Cart</button>
+                    <button>Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
